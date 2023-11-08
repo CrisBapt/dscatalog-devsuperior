@@ -173,5 +173,4 @@ public class ProductResourceTests {
 		result.andExpect(status().isNotFound());
 	}
 	
-	
 }
