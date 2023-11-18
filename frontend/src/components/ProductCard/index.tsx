@@ -1,12 +1,15 @@
+import { Product } from 'types/product';
 import ProductPrice from 'components/ProductPrice';
 import ProductImg from 'assets/images/product.png';
 
 import './styles.css';
 
+type Props = {
+  product: Product;
+}
 
-const ProductCard = () => {
+const ProductCard = ({product} : Props) => {
   return (
-    <>
       <div className="base-card product-card">
         <div className="card-top-container">
             <img src={ProductImg} alt='Nome do produto' />
@@ -16,7 +19,6 @@ const ProductCard = () => {
           <ProductPrice />
         </div>
       </div>
-    </>
   );
 };
 
